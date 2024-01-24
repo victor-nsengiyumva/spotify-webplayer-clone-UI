@@ -1,0 +1,11 @@
+/* Your main CSS file */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Other styles or custom CSS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
