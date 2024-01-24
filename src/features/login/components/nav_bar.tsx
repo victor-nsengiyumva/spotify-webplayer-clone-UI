@@ -8,3 +8,12 @@ export default function NavBar() {
         </nav>
     );
 }
+
+
+export function BottomBar(){
+    return (
+        <nav className="bg-black pt-8 pb-8 flex justify-center">
+            <p className='text-gray-400 font-extralight text-xs'>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+        </nav>
+    );
+}

@@ -5,8 +5,8 @@ import FormField from "./form_field";
 
 export default function MainBody() {
     return (
-        <section className="bg-custom-color relative ">
-            <div className="bg-black top-8 absolute flex flex-col items-center justify-center rounded-md left-1/2 transform -translate-x-1/2 w-1/2 min-w-custom1">
+        <section className="bg-custom-color ">
+            <div className="bg-black mt-9 mb-9 flex flex-col items-center justify-center rounded-md  w-1/2 min-w-custom1 mx-auto">
                 <p className="text-white font-bold text-5xl pt-16 pb-16">
                     Log in to Spotify
                 </p>

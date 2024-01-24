@@ -27,7 +27,7 @@ export default function FormField() {
         </div>
         <Divider/>
         <div className="flex justify-center mb-11">
-            <p className="text-white mr-2">
+            <p className="text-gray-400 mr-2">
             Don't have an account?
             </p>
             <a className="text-white font-medium text-center" href="#">Sign up for Spotify</a>
