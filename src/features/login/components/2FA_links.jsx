@@ -1,10 +1,12 @@
 
 import react_logo from '../../../assets/react.svg';
 
-export default function TwoFactorAuthLinks(){
+
+
+export default function TwoFactorAuthLinks({logo}){
     return (
         <div className=" border border-gray-500 w-80 h-12 flex items-center justify-around flex-row  rounded-full mb-2">
-            <img src={react_logo} alt="" />
+            {logo}
             <p className="text-white pr-10 font-medium">Continue with Google</p>
         </div>
     )

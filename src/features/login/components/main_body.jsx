@@ -1,6 +1,8 @@
 import TwoFactorAuthLinks, { ContinueWithNumber } from "./2FA_links";
 import Divider from "./divider";
 import FormField from "./form_field";
+import { FaGoogle, FaFacebook, FaApple } from 'react-icons/fa';
+
 
 
 export default function MainBody() {
@@ -10,9 +12,9 @@ export default function MainBody() {
                 <p className="text-white font-bold text-5xl pt-16 pb-16">
                     Log in to Spotify
                 </p>
-                <TwoFactorAuthLinks/>
-                <TwoFactorAuthLinks/>
-                <TwoFactorAuthLinks/>
+                <TwoFactorAuthLinks logo={FaGoogle}/>
+                <TwoFactorAuthLinks logo={FaFacebook}/>
+                <TwoFactorAuthLinks logo={FaApple}/>
                 <ContinueWithNumber/>
                 <Divider/>
                 <FormField/>
