@@ -1,10 +1,13 @@
+// import NavBar from "./features/login/components/nav_bar";
+
+import NavBar from "./features/login/components/nav_bar"
 
 function App() {
 
   return (
-    <div className="text-4xl font-bold text-center text-blue-500"> 
-      Sportify but with vite
-    </div>
+    <>
+    <NavBar/>
+    </>
   )
 }
 
