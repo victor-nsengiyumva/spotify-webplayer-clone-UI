@@ -2,11 +2,13 @@
 
 
 
-export default function TwoFactorAuthLinks({logo}){
+export default function TwoFactorAuthLinks({icon}){
     return (
         <div className=" border border-gray-500 w-80 h-12 flex items-center justify-around flex-row  rounded-full mb-2">
-            {logo}
-            <p className="text-white pr-10 font-medium">Continue with Google</p>
+            <div className="h-6 w-6">
+            <img src={icon} alt="" />
+            </div>
+            <p className="text-white pr-12 font-medium">Continue with Google</p>
         </div>
     )
 }
