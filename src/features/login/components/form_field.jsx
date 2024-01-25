@@ -1,4 +1,5 @@
 import Divider from "./divider";
+import { Link } from "react-router-dom";
 
 
 export default function FormField() {
@@ -18,8 +19,9 @@ export default function FormField() {
                     <input className=" ml-1 mr-3" type="checkbox" />
                     <p className="text-white">Remember me</p>
                 </div>
-
+                <Link to="/home">
                 <button  className="bg-green-500 text-black font-bold mb-8 w-80 h-12 rounded-full hover:bg-green-700 " type="button">Log in</button>
+                </Link>
             </form>
             <div className="flex justify-center">
             <a className="text-white font-medium text-center hover:text-green-500" href="#">Forgot your password?</a>
