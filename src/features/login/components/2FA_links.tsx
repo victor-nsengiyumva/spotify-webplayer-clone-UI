@@ -1,5 +1,4 @@
 
-import react_logo from '../../../assets/react.svg';
 
 
 
