@@ -16,3 +16,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </Router>
   </React.StrictMode>,
 )
+
+
+// this is the entry point of the react p[roject]
