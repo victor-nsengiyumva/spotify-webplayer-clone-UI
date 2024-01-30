@@ -6,10 +6,6 @@ import google_icon from '../../../assets/icons8-google-48.png'
 import facebook_icon from '../../../assets/icons8-facebook-48.png'
 import apple_icon from '../../../assets/icons8-apple-50.png'
 
-
-
-
-
 export default function MainBody() {
     return (
         <section className="bg-custom-color ">
