@@ -11,6 +11,13 @@ export default {
       },
       fontFamily:{
         body:"Roboto, sans-serif"
+      },
+      height: {
+        "85%":"85%",
+        "70%":"70%"
+      },
+      width:{
+        "73%":"73%"
       }
     },
   },
