@@ -34,14 +34,30 @@ export default function Home() {
                                     <img className="h-6 w-6" src={library_image} alt="" />
                                     <p className='text-gray-400 font-bold ml-5'>Your Library</p>
                                 </div>
-                                <FaPlus className='text-gray-400'/>
+                                <FaPlus className='text-gray-400' />
                             </div>
-                            <div className='border border-white h-40 min-h-40 py-2 px-2 flex flex-col overflow-y-auto'>
-                                <div className='h-40 min-h-40 bg-gray-100'>
-                                    yeah
+                            <div className=' h-40 min-h-40 py-2 px-2 flex flex-col overflow-y-auto'>
+                                <div className='h-40 min-h-40 bg-custom-color-2 rounded-lg py-3 px-3 flex flex-col justify-evenly'>
+                                    <p className='text-white font-bold'>
+                                        Create your first playlist
+                                    </p>
+                                    <p className='text-white'>
+                                        Its easy, we'll help you
+                                    </p>
+                                    <button type="button" className="h-9 w-44 bg-white font-bold px-6 rounded-full text-sm">
+                                        Create Playlist
+                                    </button>
                                 </div>
-                                <div className='h-40 min-h-40 bg-gray-100 mt-3'>
-                                    yeah
+                                <div className='h-40 min-h-40 bg-custom-color-2 rounded-lg py-3 px-3 flex flex-col justify-evenly mt-3'>
+                                    <p className='text-white font-bold'>
+                                        Let's find some podcasts to follow
+                                    </p>
+                                    <p className='text-white'>
+                                        We'll keep you updated on new episodes
+                                    </p>
+                                    <button type="button" className="h-9 w-44 bg-white font-bold px-6 rounded-full text-sm">
+                                        Browse podcasts
+                                    </button>
                                 </div>
                             </div>
                         </div>

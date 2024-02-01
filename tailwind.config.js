@@ -5,9 +5,11 @@ export default {
     extend: {
       backgroundColor: {
         'custom-color': '#121212',
+        'custom-color-2':'#242323'
       },
       minWidth:{
-        'custom1':'680px'
+        'custom1':'680px',
+        
       },
       fontFamily:{
         body:"Roboto, sans-serif"
@@ -26,7 +28,8 @@ export default {
       },
       minHeight:{
         "560":"560px"
-      }
+      },
+   
    
     },
   },
