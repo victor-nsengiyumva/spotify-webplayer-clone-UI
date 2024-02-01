@@ -3,8 +3,6 @@ import { FaHome, FaSearch, FaPlus } from 'react-icons/fa';
 import library_image from '../../../assets/library-gray.svg'
 
 
-
-
 export default function Home() {
     return (
         <section className="bg-black h-screen flex flex-col px-1 py-1">
@@ -36,7 +34,7 @@ export default function Home() {
                                 </div>
                                 <FaPlus className='text-gray-400' />
                             </div>
-                            <div className=' h-40 min-h-40 py-2 px-2 flex flex-col overflow-y-auto'>
+                            <div className=' h-40 min-h-40 py-2 px-2 flex flex-col overflow-hidden hover:overflow-y-auto'>
                                 <div className='h-40 min-h-40 bg-custom-color-2 rounded-lg py-3 px-3 flex flex-col justify-evenly'>
                                     <p className='text-white font-bold'>
                                         Create your first playlist
@@ -60,6 +58,29 @@ export default function Home() {
                                     </button>
                                 </div>
                             </div>
+                            <div className=' my-6 mx-6'>
+                                <div className='flex flex-row items-center justify-start mb-3'>
+                                    <p className='text-xs text-gray-400 mr-3'>Legal</p>
+                                    <p className='text-xs text-gray-400 mr-3'>Privacy Center</p>
+                                    <p className='text-xs text-gray-400 mr-3'>
+                                        Privacy Policy
+                                    </p>
+                                </div>
+                                <div className='flex flex-row items-center justify-start mb-3'>
+                                    <p className='text-xs text-gray-400 mr-3'>Cookie Settings</p>
+                                    <p className='text-xs text-gray-400 mr-3'>About Ads</p>
+                                    <p className='text-xs text-gray-400 mr-3'>
+                                        Accessibility
+                                    </p>
+                                </div>
+                                <div className='flex flex-row items-center justify-start mb-3'>
+                                    <p className='text-xs text-gray-400 mr-3'>Cookies</p>
+
+                                </div>
+                                <button className='text-white font-bold mt-3 h-9 w-28 border border-gray-400 rounded-full'>
+                                    English
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,7 +100,7 @@ export default function Home() {
                         Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed
                     </p>
                 </div>
-                <button type="button" className="h-12 bg-white font-bold px-6 rounded-full">
+                <button type="button" className="h-12 bg-white font-bold px-6 rounded-full text-sm">
                     Sign up free
                 </button>
             </section>
