@@ -1,11 +1,18 @@
 /* Your main CSS file */
-@import 'tailwindcss/base';
+/* @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss/utilities'; */
 /* Other styles or custom CSS */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    * {
+      box-sizing: border-box;
+    }
+  }
+  
 
 
