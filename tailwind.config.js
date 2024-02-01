@@ -8,6 +8,9 @@ export default {
       },
       minWidth:{
         'custom1':'680px'
+      },
+      fontFamily:{
+        body:"Roboto, sans-serif"
       }
     },
   },
