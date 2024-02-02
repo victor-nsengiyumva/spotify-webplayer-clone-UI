@@ -3,6 +3,8 @@ import { FaHome, FaSearch, FaPlus } from 'react-icons/fa';
 import library_image from '../../../assets/library-gray.svg'
 import back_arrow from '../../../assets/back-arrow.svg'
 import forward_arrow from '../../../assets/forward-arrow.svg'
+import PictureCard from './picture_card';
+
 
 
 
@@ -105,6 +107,10 @@ export default function Home() {
                                 </button>
                             </div>
                         </nav>
+
+                        <div className=' flex flex-col ' id='main-content'>
+                            <PictureCard/>
+                        </div>
 
                     </div>
                 </div>

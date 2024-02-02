@@ -14,7 +14,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 /* Track */
@@ -24,5 +24,11 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-600 hover:bg-zinc-200;
+  @apply bg-gray-600 hover:bg-zinc-200 rounded-sm;
+}
+
+.max-lines-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
