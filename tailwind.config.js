@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        'custom-color': '#121212',
-        'custom-color-2':'#242323'
+        'custom-color': '#121212', // the grey of containers
+        'custom-color-2':'#242323', // the lighter gray of the create playlist container
+        'custom-color-3':'#070708'  // the nav bar color on the home outlet
       },
       minWidth:{
         'custom1':'680px',

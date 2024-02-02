@@ -1,6 +1,9 @@
 import sportify_logo from '../../../assets/Spotify-White-Logo.wine.svg'
 import { FaHome, FaSearch, FaPlus } from 'react-icons/fa';
 import library_image from '../../../assets/library-gray.svg'
+import back_arrow from '../../../assets/back-arrow.svg'
+import forward_arrow from '../../../assets/forward-arrow.svg'
+
 
 
 export default function Home() {
@@ -85,7 +88,23 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="w-73%  px-1 py-1">
-                    <div className="bg-custom-color h-full rounded-lg">
+                    <div className="bg-custom-color h-full rounded-lg ">
+                        <nav className='h-16 bg-custom-color-3 rounded-tl-lg rounded-tr-lg flex flex-row items-center px-6 justify-between'>
+                            <div className='flex' id='nav-icons'>
+                                <div className='h-7 w-7 rounded-full bg-black'>
+                                    <img src={back_arrow} className='h-6 w-6' alt="" />
+                                </div>
+                                <div className='h-7 w-7 rounded-full bg-black flex items-center justify-center ml-3'>
+                                    <img src={forward_arrow} className='h-4 w-4' alt="" />
+                                </div>
+                            </div>
+                            <div className='flex items-center'>
+                                <p className='text-gray-400'>Sign up</p>
+                                <button type="button" className="h-10 bg-white font-bold px-6 rounded-full text-sm ml-4">
+                                    Log in
+                                </button>
+                            </div>
+                        </nav>
 
                     </div>
                 </div>
