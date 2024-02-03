@@ -8,27 +8,31 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
 
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
-}
+@layer base {
 
-/* Track */
-::-webkit-scrollbar-track {
-  @apply bg-custom-color rounded-lg;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  @apply bg-gray-600 hover:bg-zinc-200 rounded-sm;
-}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
 
-.max-lines-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-custom-color rounded-lg;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 hover:bg-zinc-200 rounded-sm;
+  }
+
+  .max-lines-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 }

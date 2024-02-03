@@ -90,8 +90,8 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="w-73%  px-1 py-1">
-                    <div className="bg-custom-color h-full rounded-lg ">
-                        <nav className='h-16 bg-custom-color-3 rounded-tl-lg rounded-tr-lg flex flex-row items-center px-6 justify-between'>
+                    <div className="bg-custom-color h-full rounded-lg flex flex-col">
+                        <nav className='py-3 bg-custom-color-3 rounded-tl-lg rounded-tr-lg flex flex-row items-center px-6 justify-between'>
                             <div className='flex' id='nav-icons'>
                                 <div className='h-7 w-7 rounded-full bg-black'>
                                     <img src={back_arrow} className='h-6 w-6' alt="" />
