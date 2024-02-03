@@ -11,11 +11,19 @@ export default function Index() {
                     <a className="text-gray-400 text-sm" href="">show all</a>
                 </div>
             </div>
-            <div className="mt-2 px-4 grid gap-x-4 gap-y-4 grid-cols-3 h-72 mr-4 justify-evenly overflow-hidden">
-                <PictureCard/>
-                <PictureCard/>
-                <PictureCard/>        
+            <div className="mt-2 px-4 h-72 overflow-y-hidden">
+                <div className="flex flex-wrap justify-evenly ">
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                </div>
+
             </div>
+
         </>
     )
 }

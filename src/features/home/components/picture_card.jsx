@@ -6,11 +6,11 @@ import play_icon from '../../../assets/play-button-icon-black.svg'
 export default function PictureCard() {
     return (
 
-        <div className='group hover:bg-custom-color-2 relative bg-custom-color-4  h-273px w-196px flex flex-col items-start pt-3.5 pb-3.5 pl-3.5 rounded-lg'>
-            <div className='h-163.63px w-163.63px  rounded-lg '>
+        <div className='mr-3.5 mb-4 group hover:bg-custom-color-2 relative bg-custom-color-4  h-273px w-[190px] flex flex-col items-start pt-3.5 pb-3.5 pl-3.5 rounded-lg'>
+            <div className='h-[160px] w-[160px]  rounded-lg '>
                 <img className='w-full h-full object-fill rounded-lg ml-0.5' src={album_cover} alt="" />
             </div>
-            <p className='text-white mt-2 font-bold ml-0.5'>
+            <p className='text-white mt-3 font-bold ml-0.5'>
                 lofi beats
             </p>
             <div className='  w-163.63px overflow-hidden'>
