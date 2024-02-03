@@ -5,7 +5,9 @@ import Index from './index_route';
 export default function DashArea() {
     return (
         <>
-            <Index />
+            <div className=' overflow-y-auto'>
+                <Index />
+            </div>
         </>
     )
 }

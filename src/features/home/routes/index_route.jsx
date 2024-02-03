@@ -1,3 +1,4 @@
+import Footer from "../components/footer";
 import PictureCard from "../components/picture_card";
 
 export default function Index() {
@@ -21,9 +22,8 @@ export default function Index() {
                     <PictureCard />
                     <PictureCard />
                 </div>
-
             </div>
-
+            <Footer />
         </>
     )
 }

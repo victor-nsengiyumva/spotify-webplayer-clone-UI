@@ -27,7 +27,7 @@ export default function FormField() {
             <a className="text-white font-medium text-center hover:text-green-500" href="#">Forgot your password?</a>
             </div>
         </div>
-        <Divider/>
+        <Divider className={'bg-custom-color'}/>
         <div className="flex justify-center mb-11">
             <p className="text-gray-400 mr-2">
             Don't have an account?

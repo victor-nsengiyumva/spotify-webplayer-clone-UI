@@ -17,7 +17,7 @@ export default function MainBody() {
                 <TwoFactorAuthLinks icon={facebook_icon}/>
                 <TwoFactorAuthLinks icon={apple_icon}/>
                 <ContinueWithNumber/>
-                <Divider/>
+                <Divider className={'bg-custom-color'}/>
                 <FormField/>
             </div>
         </section>
