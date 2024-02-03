@@ -6,13 +6,11 @@ import forward_arrow from '../../../assets/forward-arrow.svg'
 import DashArea from './dash_area';
 
 
-
-
 export default function Home() {
     return (
-        <section className="bg-black h-screen flex flex-col px-1 py-1">
+        <section className="h-screen flex flex-col px-1 py-1">
 
-            <section className="h-87%  flex flex-row min-h-560">
+            <section className="h-87% flex flex-row min-h-560">
                 <div className="flex-grow min-w-[240px] flex flex-col ">
                     <div className=" flex-grow px-1 py-1">
                         <div className="bg-custom-color h-full rounded-lg  px-2">
@@ -89,7 +87,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="w-[86%]  px-1 py-1">
+                <div className="w-[86%]  px-1 py-1 min-w-[520px]">
                     <div className="bg-custom-color h-full rounded-lg flex flex-col">
                         <nav className='py-3 bg-custom-color-3 rounded-tl-lg rounded-tr-lg flex flex-row items-center px-6 justify-between'>
                             <div className='flex' id='nav-icons'>
@@ -112,7 +110,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className=" flex-grow flex flex-row  items-center px-5 justify-between bg-gradient-to-r from-pink-800 via-purple-500 to-blue-500 my-1 mx-1" >
+            <section className="min-w-[755px] min-h-[80px] flex-grow flex flex-row  items-center px-5 justify-between bg-gradient-to-r from-pink-800 via-purple-500 to-blue-500 my-1 mx-1" >
                 <div>
                     <p className="text-white font-medium">
                         Preview of spotify
