@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './css/tailwind.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './features/home/components/home.jsx'
+import Home from './features/home/routes/home.jsx'
 import Login from "./features/login/components/login_page.jsx"
 import ErrorPage from './features/Errors/error_page.jsx'
 

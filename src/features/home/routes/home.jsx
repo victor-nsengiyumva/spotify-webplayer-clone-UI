@@ -3,7 +3,7 @@ import { FaHome, FaSearch, FaPlus } from 'react-icons/fa';
 import library_image from '../../../assets/library-gray.svg'
 import back_arrow from '../../../assets/back-arrow.svg'
 import forward_arrow from '../../../assets/forward-arrow.svg'
-import PictureCard from './picture_card';
+import DashArea from './dash_area';
 
 
 
@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <section className="bg-black h-screen flex flex-col px-1 py-1">
 
-            <section className="h-87%  flex flex-row min-h-560 ">
+            <section className="h-87%  flex flex-row min-h-560">
                 <div className="flex-grow  flex flex-col  min-w-80">
                     <div className=" flex-grow px-1 py-1">
                         <div className="bg-custom-color h-full rounded-lg  px-2">
@@ -107,11 +107,7 @@ export default function Home() {
                                 </button>
                             </div>
                         </nav>
-
-                        <div className=' flex flex-col ' id='main-content'>
-                            <PictureCard/>
-                        </div>
-
+                        <DashArea/>
                     </div>
                 </div>
 
