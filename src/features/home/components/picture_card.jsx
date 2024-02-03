@@ -6,15 +6,15 @@ import play_icon from '../../../assets/play-button-icon-black.svg'
 export default function PictureCard() {
     return (
 
-        <div className='group hover:bg-custom-color-2 relative bg-custom-color-4  h-273px  flex flex-col items-start pt-3.5 pb-3.5 pl-3.5 pr-3.5 rounded-lg'>
+        <div className='group hover:bg-custom-color-2 relative bg-custom-color-4  h-273px w-196px flex flex-col items-start pt-3.5 pb-3.5 pl-3.5 rounded-lg'>
             <div className='h-163.63px w-163.63px  rounded-lg '>
-                <img className='w-full h-full object-fill rounded-lg' src={album_cover} alt="" />
+                <img className='w-full h-full object-fill rounded-lg ml-0.5' src={album_cover} alt="" />
             </div>
-            <p className='text-white mt-2 font-bold '>
+            <p className='text-white mt-2 font-bold ml-0.5'>
                 lofi beats
             </p>
             <div className='  w-163.63px overflow-hidden'>
-                <p className='text-gray-400 mt-1 text-sm  overflow-ellipsis max-lines-2'>
+                <p className='text-gray-400 mt-1 text-sm  overflow-ellipsis max-lines-2 ml-o.5'>
                     chill beats lofi vibes, new tracks and many more things.
                 </p>
             </div>
