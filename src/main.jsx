@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './features/home/routes/home.jsx'
 import Login from "./features/login/components/login_page.jsx"
 import ErrorPage from './features/Errors/error_page.jsx'
+import Test from './features/mock_tests.jsx/testing.jsx'
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "login",
     element: <Login />
+  },
+  {
+    path:'test',
+    element:<Test/>
   }
 ])
 
