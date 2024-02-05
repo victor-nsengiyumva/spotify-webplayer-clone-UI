@@ -16,6 +16,16 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogActions-root': {
     padding: theme.spacing(1),
   },
+  "& .MuiDialog-container": {
+    "& .MuiPaper-root": {
+      width: "100%",
+      maxWidth: "55%", 
+      minWidth:'800px',
+      height:'60%',
+      background:'linear-gradient(to bottom, #353c5e 70%, #242323 100%)',
+      borderRadius: theme.spacing(1)
+    },
+  },
 
 }));
 
@@ -38,6 +48,8 @@ export default function CustomizedDialogs() {
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
+        sx={{width:'100%'}}
+       
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
           Modal title
@@ -54,7 +66,7 @@ export default function CustomizedDialogs() {
         >
           <CloseIcon />
         </IconButton>
-        <DialogContent>
+        <DialogContent  >
           <Typography gutterBottom>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
