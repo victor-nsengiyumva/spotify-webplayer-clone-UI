@@ -32,29 +32,18 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 
 }));
 
-export default function CustomizedDialogs() {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
+export default function CustomizedDialogs({ alertState, onClose }) {
 
   return (
     <React.Fragment>
-      <Button className='' variant="outlined" onClick={handleClickOpen}>
-        Open dialog
-      </Button>
       <BootstrapDialog
-        onClose={handleClose}
+        onClose={onClose}
         aria-labelledby="customized-dialog-title"
-        open={open}
+        open={alertState}
       >
         <IconButton
           aria-label="close"
-          onClick={handleClose}
+          onClick={onClose}
           sx={{
             position: 'absolute',
             right: 8,
