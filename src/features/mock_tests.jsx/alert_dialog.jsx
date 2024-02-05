@@ -8,6 +8,9 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import CustomButton from '../home/components/custom_button';
+import album_cover from '../../assets/java.png'
+
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -19,10 +22,10 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialog-container": {
     "& .MuiPaper-root": {
       width: "100%",
-      maxWidth: "55%", 
-      minWidth:'800px',
-      height:'60%',
-      background:'linear-gradient(to bottom, #353c5e 70%, #242323 100%)',
+      maxWidth: "55%",
+      minWidth: '800px',
+      height: '60%',
+      background: 'linear-gradient(to bottom, #353c5e 60%, #242323 100%)',
       borderRadius: theme.spacing(1)
     },
   },
@@ -48,12 +51,7 @@ export default function CustomizedDialogs() {
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
-        sx={{width:'100%'}}
-       
       >
-        <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Modal title
-        </DialogTitle>
         <IconButton
           aria-label="close"
           onClick={handleClose}
@@ -66,29 +64,31 @@ export default function CustomizedDialogs() {
         >
           <CloseIcon />
         </IconButton>
-        <DialogContent  >
-          <Typography gutterBottom>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </Typography>
-          <Typography gutterBottom>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-          </Typography>
-          <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
-          </Typography>
+        <DialogContent className='flex flex-row items-center justify-evenly' >
+          <div className='h-[270px] w-[270px]'>
+            <img className='w-full h-full object-fill rounded-lg ml-0.5' src={album_cover} alt="" />
+
+          </div>
+          <div className=' h-[250px] w-[270px] flex flex-col items-center space-y-4'>
+            <p className='text-white font-bold text-2xl text-center'>
+              Start listening with a free spotify account
+            </p>
+            <CustomButton content={'Sign up free'} classname={'bg-green-500'} />
+            <CustomButton content={'Download app'} classname={'bg-transparent border text-white'} />
+            <div className="flex justify-center">
+              <p className="text-gray-400 mr-2 text-xs">
+                Already have an account?
+              </p>
+              <a className="text-white font-medium text-center hover:text-green-500 text-xs" href="#">Log in</a>
+            </div>
+          </div>
 
         </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Save changes
-          </Button>
-        </DialogActions>
+
       </BootstrapDialog>
     </React.Fragment>
   );
 }
+
+
+
