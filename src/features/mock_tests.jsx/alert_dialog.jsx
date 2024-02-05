@@ -16,6 +16,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogActions-root': {
     padding: theme.spacing(1),
   },
+
 }));
 
 export default function CustomizedDialogs() {
@@ -30,7 +31,7 @@ export default function CustomizedDialogs() {
 
   return (
     <React.Fragment>
-      <Button variant="outlined" onClick={handleClickOpen}>
+      <Button className='' variant="outlined" onClick={handleClickOpen}>
         Open dialog
       </Button>
       <BootstrapDialog
@@ -53,7 +54,7 @@ export default function CustomizedDialogs() {
         >
           <CloseIcon />
         </IconButton>
-        <DialogContent dividers>
+        <DialogContent>
           <Typography gutterBottom>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
@@ -68,6 +69,7 @@ export default function CustomizedDialogs() {
             magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
             ullamcorper nulla non metus auctor fringilla.
           </Typography>
+
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose}>
