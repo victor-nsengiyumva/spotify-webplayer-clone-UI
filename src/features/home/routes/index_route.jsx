@@ -1,7 +1,29 @@
 import Footer from "../components/footer";
 import PictureCard from "../components/picture_card";
+import { useState } from "react";
 
 export default function Index() {
+
+    const [showAll, setShowAll] = useState(false)
+
+    const hideAllCallBack = () => {
+        setShowAll(false);
+    }
+
+    const showAllCallBack = () => {
+        setShowAll(true);
+    }
+
+
+    const outerClassName = "mt-2 px-4 h-72 overflow-y-hidden";
+    const innerClassName = "flex flex-wrap justify-evenly"
+
+    const AllOuterClassName = "mt-2 px-4";
+    const AllInnerClassName = "flex flex-wrap";
+
+    const showAllText = 'show all';
+    const hideAllText = 'hide all'
+
     return (
         <>
             <div className=' flex flex-col ' id='main-content'>
@@ -9,11 +31,11 @@ export default function Index() {
                     <p className='text-white font-extrabold text-xl'>
                         Spotify PlayLists
                     </p>
-                    <a className="text-gray-400 text-sm" href="">show all</a>
+                    <button onClick={showAll ? hideAllCallBack : showAllCallBack} className="text-gray-400 text-sm" href="">{showAll ? hideAllText : showAllText}</button>
                 </div>
             </div>
-            <div className="mt-2 px-4 h-72 overflow-y-hidden">
-                <div className="flex flex-wrap justify-evenly ">
+            <div className={showAll ? AllOuterClassName : outerClassName}>
+                <div className={showAll ? AllInnerClassName : innerClassName}>
                     <PictureCard />
                     <PictureCard />
                     <PictureCard />
@@ -21,6 +43,14 @@ export default function Index() {
                     <PictureCard />
                     <PictureCard />
                     <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    <PictureCard />
+                    
                 </div>
             </div>
             <Footer />
