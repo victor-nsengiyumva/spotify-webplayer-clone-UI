@@ -3,8 +3,7 @@ import { FaHome, FaSearch, FaPlus } from 'react-icons/fa';
 import library_image from '../../../assets/library-gray.svg'
 import back_arrow from '../../../assets/back-arrow.svg'
 import forward_arrow from '../../../assets/forward-arrow.svg'
-import DashArea from './dash_area';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -100,13 +99,17 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className='flex items-center'>
-                                <p className='text-gray-400'>Sign up</p>
+                                <Link to={`login`}>
+                                    <p className='text-gray-400'>Sign up</p>
+                                </Link>
+                                <Link to={`login`}>
                                 <button type="button" className="h-10 bg-white font-bold px-6 rounded-full text-sm ml-4">
                                     Log in
                                 </button>
+                                </Link>
                             </div>
                         </nav>
-                        <Outlet/>
+                        <Outlet />
                     </div>
                 </div>
 
@@ -120,9 +123,11 @@ export default function Home() {
                         Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed
                     </p>
                 </div>
+                <Link to={`login`}>
                 <button type="button" className="h-12 bg-white font-bold px-6 rounded-full text-sm">
                     Sign up free
                 </button>
+                </Link>
             </section>
         </section>
     )

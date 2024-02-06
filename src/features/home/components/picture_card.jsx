@@ -21,7 +21,7 @@ export default function PictureCard() {
 
         <div className='mr-3.5 mb-4 group hover:bg-custom-color-2 relative bg-custom-color-4  h-273px w-[190px] flex flex-col items-start pt-3.5 pb-3.5 pl-3.5 rounded-lg'>
             <div className='h-[160px] w-[160px]  rounded-lg '>
-                <img className='w-full h-full object-fill rounded-lg ml-0.5' src={album_cover} alt="" />
+                <img className='w-full h-full object-fill rounded-lg ml-0.5 shadow-lg' src={album_cover} alt="" />
             </div>
             <p className='text-white mt-3 font-bold ml-0.5'>
                 lofi beats

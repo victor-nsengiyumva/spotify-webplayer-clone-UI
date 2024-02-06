@@ -7,6 +7,7 @@ import Login from "./features/login/components/login_page.jsx"
 import ErrorPage from './features/Errors/error_page.jsx'
 import Test from './features/mock_tests.jsx/testing.jsx'
 import Index from './features/home/routes/index_route.jsx'
+import PlayListDetails from './features/home/routes/playlist_details.jsx'
 
 
 const router = createBrowserRouter([
@@ -16,7 +17,10 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Index/> },
-      
+      {
+        path: 'playlist/:playListId',
+        element:<PlayListDetails/>
+      }
     ]
   },
   {
