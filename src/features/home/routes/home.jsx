@@ -4,6 +4,7 @@ import library_image from '../../../assets/library-gray.svg'
 import back_arrow from '../../../assets/back-arrow.svg'
 import forward_arrow from '../../../assets/forward-arrow.svg'
 import DashArea from './dash_area';
+import { Outlet } from 'react-router-dom';
 
 
 export default function Home() {
@@ -105,7 +106,7 @@ export default function Home() {
                                 </button>
                             </div>
                         </nav>
-                        <DashArea/>
+                        <Outlet/>
                     </div>
                 </div>
 
