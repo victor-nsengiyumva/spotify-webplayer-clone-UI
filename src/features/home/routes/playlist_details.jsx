@@ -15,7 +15,7 @@ export default function PlayListDetails() {
                 </div>
                 <div className='flex flex-col justify-end h-[230px] ml-7'>
                     <p className='text-white pt-2'>Playlist</p>
-                    <p className='text-white pt-2 text-5xl font-xtreme-bold'>Lofi Vibes</p>
+                    <p className='text-white pt-2 text-5xl font-xtreme-bold'>Lofi Beats</p>
                     <p className='text-gray-300 pt-2 text-sm font'>Soundtrack your cozy dinner with lofi vibes</p>
                     <p className='text-white pt-2 text-sm'>159,239 likes . 134 songs,<span className='text-gray-300'> about 8 hr</span></p>
                 </div>
@@ -35,7 +35,7 @@ export default function PlayListDetails() {
                             <p className='text-gray-300 text-sm'>Title</p>
                         </div>
                         <div className='flex-grow justify-between flex items-center mx-2'>
-                            <p className='text-gray-300 text-sm'>Album</p>
+                            <p className='text-gray-300 text-sm '>Album</p>
                             <p className='text-gray-300 text-sm'>Date Added</p>
                             <p className='text-gray-300 text-sm'>Length</p>
                         </div>
