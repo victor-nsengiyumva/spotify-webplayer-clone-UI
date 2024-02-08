@@ -8,8 +8,8 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import CustomButton from '../home/components/custom_button';
-import album_cover from '../../assets/java.png';
+import CustomButton from '../../home/components/custom_button';
+import album_cover from '../../../assets/java.png';
 import { Link } from 'react-router-dom';
 
 

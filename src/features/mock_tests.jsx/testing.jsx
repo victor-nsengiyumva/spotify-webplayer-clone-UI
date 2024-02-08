@@ -1,4 +1,4 @@
-import CustomizedDialogs from "./alert_dialog";
+import CustomizedDialogs from "../login/components/alert_dialog";
 
 export default function Test(){
     return(

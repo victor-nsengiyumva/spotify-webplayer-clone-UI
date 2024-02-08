@@ -1,7 +1,7 @@
 import album_cover from '../../../assets/java.png'
 import play_icon from '../../../assets/play-button-icon-black.svg'
 import { useState } from 'react';
-import CustomizedDialogs from '../../mock_tests.jsx/alert_dialog';
+import CustomizedDialogs from '../../login/components/alert_dialog';
 import { Link } from 'react-router-dom';
 
 
