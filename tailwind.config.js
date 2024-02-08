@@ -45,6 +45,9 @@ export default {
       maxHeight:{
         "163.63px":"163.63px",
 
+      },
+      fontWeight:{
+        'xtreme-bold':'1000'
       }
    
     },
