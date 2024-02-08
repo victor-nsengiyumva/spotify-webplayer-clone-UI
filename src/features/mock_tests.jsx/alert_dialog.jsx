@@ -9,7 +9,8 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import CustomButton from '../home/components/custom_button';
-import album_cover from '../../assets/java.png'
+import album_cover from '../../assets/java.png';
+import { Link } from 'react-router-dom';
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -62,13 +63,15 @@ export default function CustomizedDialogs({ alertState, onClose }) {
             <p className='text-white font-bold text-2xl text-center'>
               Start listening with a free spotify account
             </p>
+            <Link to={`login`}>
             <CustomButton content={'Sign up free'} classname={'bg-green-500'} />
+            </Link>
             <CustomButton content={'Download app'} classname={'bg-transparent border text-white'} />
             <div className="flex justify-center">
               <p className="text-gray-400 mr-2 text-xs">
                 Already have an account?
               </p>
-              <a className="text-white font-medium text-center hover:text-green-500 text-xs" href="#">Log in</a>
+              <Link className="text-white font-medium text-center hover:text-green-500 text-xs" to={`login`}>Log in</Link>
             </div>
           </div>
 
