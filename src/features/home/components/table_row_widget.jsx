@@ -20,10 +20,10 @@ export default function TableRowWidget() {
                 </div>
             </div>
             <div className='flex-grow justify-evenly flex items-center mx-2'>
-                <div className=' w-full max-w-[33.3%]'>
+                <div className=' w-full max-w-[33.3%] hidden  md:block'>
                     <p className='text-gray-300 text-sm max-h-[20px] overflow-hidden text-ellipsis whitespace-nowrap'>Easy Dreamin' </p>
                 </div>
-                <div className=' w-full flex justify-center max-w-[33.3%]'>
+                <div className=' w-full hidden justify-center max-w-[33.3%] md:flex'>
                     <p className='text-gray-300 text-sm max-h-[20px] overflow-hidden text-ellipsis whitespace-nowrap mr-5'>6 hours ago</p>
                 </div>
                 <div className=' w-full flex justify-evenly max-w-[33.3%] items-baseline'>
