@@ -30,11 +30,7 @@
     @apply bg-gray-600 hover:bg-zinc-200 rounded-sm;
   }
 
-  .max-lines-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
+
 }
 
 
@@ -43,6 +39,18 @@
     .tinyFont{
       font-size: 11px;
       line-height: 15px;
+    }
+
+    .max-lines-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  
+    .max-lines-1 {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: horizontal;
     }
 
 }

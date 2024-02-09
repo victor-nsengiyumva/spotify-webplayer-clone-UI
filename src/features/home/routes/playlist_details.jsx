@@ -4,6 +4,7 @@ import OutlinedHeart from '@mui/icons-material/FavoriteBorderOutlined';
 import { MoreHoriz } from '@mui/icons-material';
 import { FaHeart } from 'react-icons/fa';
 import Divider from '../../login/components/divider';
+import TableRowWidget from '../components/table_row_widget';
 
 
 export default function PlayListDetails() {
@@ -29,7 +30,7 @@ export default function PlayListDetails() {
                     <MoreHoriz fontSize='large' className='text-gray-500 hover:text-white ml-5' />
                 </div>
                 <div className=' mt-2 mx-5'>
-                    <div className='h-7  flex px-3'>
+                    <div className='h-7 flex px-3'>
                         <div className='w-[40%]  flex items-center'>
                             <p className='text-gray-300 mr-4 text-sm' >#</p>
                             <p className='text-gray-300 text-sm'>Title</p>
@@ -40,45 +41,13 @@ export default function PlayListDetails() {
                             <p className='text-gray-300 text-sm'>Length</p>
                         </div>
                     </div>
-                    <Divider className={`bg-slate-500 w-full mt-0 mb-0`}/>
-                    <table className='w-full mt-5 mx-5'>
-                        
-                        <tr>
-                            <td>John</td>
-                            <td>30</td>
-                            <td>USA</td>
+                    <div className={`h-[1px] mt-1 bg-slate-500 w-full`} id='divider'>
+                    </div>
+                    <table className='w-full mt-5'>
+                        <tr className=''>
+                            <TableRowWidget />
                         </tr>
-                        <tr>
-                            <td>Mary</td>
-                            <td>25</td>
-                            <td>Canada</td>
-                        </tr>
-                        <tr>
-                            <td>Mary</td>
-                            <td>25</td>
-                            <td>Canada</td>
-                        </tr><tr>
-                            <td>Mary</td>
-                            <td>25</td>
-                            <td>Canada</td>
-                        </tr><tr>
-                            <td>Mary</td>
-                            <td>25</td>
-                            <td>Canada</td>
-                        </tr><tr>
-                            <td>Mary</td>
-                            <td>25</td>
-                            <td>Canada</td>
-                        </tr><tr>
-                            <td>Mary</td>
-                            <td>25</td>
-                            <td>Canada</td>
-                        </tr>
-                        <tr>
-                            <td>David</td>
-                            <td>40</td>
-                            <td>UK</td>
-                        </tr>
+
                     </table>
                 </div>
             </div>
