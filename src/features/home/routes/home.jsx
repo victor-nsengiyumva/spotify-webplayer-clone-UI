@@ -19,11 +19,15 @@ export default function Home() {
                     <div className=" flex-grow px-1 py-1">
                         <div className="bg-custom-color h-full rounded-lg  px-2">
                             <div className=" h-full flex flex-col justify-evenly">
-                                <img className='h-11 w-28' src={sportify_logo} alt="" />
-                                <div className='flex flex-row items-end ml-3'>
-                                    <FaHome className='text-white h-6 w-6' />
-                                    <p className='text-white font-bold ml-5'>Home</p>
-                                </div>
+                                <Link to={'/'}>
+                                    <img className='h-11 w-28' src={sportify_logo} alt="" />
+                                </Link>
+                                <Link to={'/'}>
+                                    <div className='flex flex-row items-end ml-3'>
+                                        <FaHome className='text-white h-6 w-6' />
+                                        <p className='text-white font-bold ml-5'>Home</p>
+                                    </div>
+                                </Link>
                                 <div className='flex flex-row items-end ml-3'>
                                     <FaSearch className='text-gray-400 h-6 w-6' />
                                     <p className='text-gray-400 font-bold ml-5'>Search</p>
@@ -95,10 +99,10 @@ export default function Home() {
                     <div className="bg-custom-color h-full rounded-lg flex flex-col">
                         <nav className='py-3 bg-custom-color-3 rounded-tl-lg rounded-tr-lg flex flex-row items-center px-6 justify-between'>
                             <div className='flex' id='nav-icons'>
-                                <button onClick={()=>{navigate(-1)}} className='h-7 w-7 rounded-full bg-black'>
+                                <button onClick={() => { navigate(-1) }} className='h-7 w-7 rounded-full bg-black'>
                                     <img src={back_arrow} className='h-6 w-6' alt="" />
                                 </button>
-                                <button onClick={()=>{navigate(1)}} className='h-7 w-7 rounded-full bg-black flex items-center justify-center ml-3'>
+                                <button onClick={() => { navigate(1) }} className='h-7 w-7 rounded-full bg-black flex items-center justify-center ml-3'>
                                     <img src={forward_arrow} className='h-4 w-4' alt="" />
                                 </button>
                             </div>
