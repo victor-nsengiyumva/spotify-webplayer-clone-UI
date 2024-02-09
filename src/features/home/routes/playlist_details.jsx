@@ -2,7 +2,6 @@ import album_cover from '../../../assets/java.png'
 import play_icon from '../../../assets/play-button-icon-black.svg'
 import OutlinedHeart from '@mui/icons-material/FavoriteBorderOutlined';
 import { MoreHoriz } from '@mui/icons-material';
-import { FaHeart } from 'react-icons/fa';
 import Divider from '../../login/components/divider';
 import TableRowWidget from '../components/table_row_widget';
 
@@ -33,20 +32,50 @@ export default function PlayListDetails() {
                     <div className='h-7 flex px-3'>
                         <div className='w-[40%]  flex items-center'>
                             <p className='text-gray-300 mr-4 text-sm' >#</p>
-                            <p className='text-gray-300 text-sm'>Title</p>
+                            <p className='text-gray-300 mr-4 text-sm'>Title</p>
                         </div>
-                        <div className='flex-grow justify-between flex items-center mx-2'>
-                            <p className='text-gray-300 text-sm '>Album</p>
-                            <p className='text-gray-300 text-sm'>Date Added</p>
-                            <p className='text-gray-300 text-sm'>Length</p>
+                        <div className='flex-grow justify-evenly flex items-center mx-2'>
+                            <div className=' w-full max-w-[33.3%]'>
+                                <p className='text-gray-300 text-sm max-h-[20px] overflow-hidden text-ellipsis whitespace-nowrap'>Album </p>
+                            </div>
+                            <div className=' w-full flex justify-center max-w-[33.3%]'>
+                                <p className='text-gray-300 text-sm max-h-[20px] overflow-hidden text-ellipsis whitespace-nowrap mr-5'>Date Added</p>
+                            </div>
+                            <div className=' w-full flex justify-center max-w-[33.3%]  border-yellow-500'>
+                                <p className='text-gray-300 text-sm max-h-[20px] overflow-hidden text-ellipsis whitespace-nowrap'>Length</p>
+                            </div>
                         </div>
+
                     </div>
                     <div className={`h-[1px] mt-1 bg-slate-500 w-full`} id='divider'>
                     </div>
                     <table className='w-full mt-5'>
-                        <tr className=''>
-                            <TableRowWidget />
-                        </tr>
+                        <tbody>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                        </tbody>
 
                     </table>
                 </div>
