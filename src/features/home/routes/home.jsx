@@ -15,7 +15,7 @@ export default function Home() {
         <section className="h-screen flex flex-col px-1 py-1">
 
             <section className="h-87% flex flex-row min-h-560">
-                <div className="flex-grow min-w-[240px] flex flex-col ">
+                <div className="flex-grow min-w-[240px] flex flex-col resize-x overflow-x-auto">
                     <div className=" flex-grow px-1 py-1">
                         <div className="bg-custom-color h-full rounded-lg  px-2">
                             <div className=" h-full flex flex-col justify-evenly">
