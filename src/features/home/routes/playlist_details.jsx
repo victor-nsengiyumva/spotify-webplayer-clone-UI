@@ -29,7 +29,7 @@ export default function PlayListDetails() {
                     <MoreHoriz fontSize='large' className='text-gray-500 hover:text-white ml-5' />
                 </div>
                 <div className=' mt-2 mx-5'>
-                    <div className='h-7 flex px-3'>
+                    <div className='h-7 flex px-3 sticky top-[0px] bg-custom-color'>
                         <div className='w-[40%]  flex items-center'>
                             <p className='text-gray-300 mr-4 text-sm' >#</p>
                             <p className='text-gray-300 mr-4 text-sm'>Title</p>
@@ -42,7 +42,7 @@ export default function PlayListDetails() {
                                 <p className='text-gray-300 text-sm max-h-[20px] overflow-hidden text-ellipsis whitespace-nowrap mr-5'>Date Added</p>
                             </div>
                             <div className=' w-full flex justify-center max-w-[33.3%]  border-yellow-500'>
-                                <p className='text-gray-300 text-sm max-h-[20px] overflow-hidden text-ellipsis whitespace-nowrap'>Length</p>
+                                <p className='text-gray-300 text-sm max-h-[20px] overflow-hidden text-ellipsis whitespace-nowrap'>Duration</p>
                             </div>
                         </div>
 
@@ -51,6 +51,30 @@ export default function PlayListDetails() {
                     </div>
                     <table className='w-full mt-5'>
                         <tbody>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
+                            <tr className=''>
+                                <TableRowWidget />
+                            </tr>
                             <tr className=''>
                                 <TableRowWidget />
                             </tr>
