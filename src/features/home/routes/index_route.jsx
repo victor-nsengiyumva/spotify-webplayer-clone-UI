@@ -1,12 +1,14 @@
+import fetchAccessToken from "../../../utils/fetch_access_token";
 import Footer from "../components/footer";
 import PictureCard from "../components/picture_card";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Index() {
 
 
-
-
+    useEffect(()=>{
+        fetchAccessToken();
+    },[])
     
 
     const [showAll, setShowAll] = useState(false)
